@@ -84,10 +84,7 @@ _Кратко: Правильно описывать коммиты — иску
 
 ```mermaid
 graph LR;
-A[UNTRACKED Новые файлы] -- "git add"--> B[untracked];
- A[Новые файлы] --- B[untracked];
-  A[Новые файлы] --- B[untracked];
-   A[Новые файлы] --- B[untracked];
+   A[UNTRACKED Новые файлы] -- "git add"--> B[untracked];
 ``` 
 
 ---
