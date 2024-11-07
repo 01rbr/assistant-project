@@ -84,7 +84,10 @@ _Кратко: Правильно описывать коммиты — иску
 
 ```mermaid
 graph LR;
-   A[UNTRACKED Новые файлы] -- "git add"--> B[untracked];
+   A[UNTRACKED новые файлы] -- "git add"--> B[STAGED UNTRACKED в списке на коммит];
+   C[MODIFIED измененный] -- "git add"--> B[STAGED UNTRACKED в списке на коммит];
+   B[STAGED UNTRACKED в списке на коммит] -- "изменение" --> C[MODIFIED измененный];
+   B[STAGED UNTRACKED в списке на коммит] -- "git commit -m" --> D[TRACKED отслеживаемый];
 ``` 
 
 ---
